@@ -23,10 +23,9 @@ public class CounterModel {
         return fifteen;
     }
 
-    public boolean isElse(boolean other) {
+    public void isElse(boolean other) {
         if(!(count == 15)){
             other = true;
         }
-        return other;
     }
 }

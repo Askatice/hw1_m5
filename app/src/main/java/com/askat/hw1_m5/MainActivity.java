@@ -29,7 +29,11 @@ public class MainActivity extends AppCompatActivity implements Contracts.Counter
             presenter.toast();
             presenter.colorChange();
         });
-        binding.decrementBtn.setOnClickListener(v -> presenter.decrement());
+        binding.decrementBtn.setOnClickListener(v -> {
+            presenter.decrement();
+            presenter.toast();
+            presenter.colorChange();
+    });
     }
 
     @Override
