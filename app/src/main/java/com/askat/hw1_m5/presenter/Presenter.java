@@ -28,7 +28,6 @@ public class Presenter {
         if (model.isFifteen(true)) {
             view.color();
         }else {
-            model.isElse(true);
                 view.colorOther();
         }
     }
