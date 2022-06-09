@@ -47,4 +47,8 @@ public class MainActivity extends AppCompatActivity implements Contracts.Counter
         binding.counterTv.setTextColor(this.getResources().getColor(R.color.green, getTheme()));
     }
 
+    @Override
+    public void colorOther() {
+        binding.counterTv.setTextColor(this.getResources().getColor(R.color.red, getTheme()));
+    }
 }

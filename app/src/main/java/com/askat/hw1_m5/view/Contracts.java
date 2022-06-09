@@ -5,6 +5,7 @@ public class Contracts {
         void updateText(int count);
         void toast();
         void color();
+        void colorOther();
     }
 
 }

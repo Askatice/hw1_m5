@@ -13,4 +13,20 @@ public class CounterModel {
         --count;
     }
 
+
+    public boolean isTen(boolean ten) {
+        ten = count == 10;
+        return ten;
+    }
+    public boolean isFifteen(boolean fifteen) {
+        fifteen = count == 15;
+        return fifteen;
+    }
+
+    public boolean isElse(boolean other) {
+        if(!(count == 15)){
+            other = true;
+        }
+        return other;
+    }
 }

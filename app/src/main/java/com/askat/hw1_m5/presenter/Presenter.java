@@ -20,13 +20,17 @@ public class Presenter {
         this.view = view;
     }
     public void toast() {
-        if (model.getCount() == 10) {
+        if(model.isTen(true)) {
             view.toast();
         }
     }
     public void colorChange() {
-        if (model.getCount() == 15) {
+        if (model.isFifteen(true)) {
             view.color();
+        }else {
+            model.isElse(true);
+                view.colorOther();
         }
     }
+
 }
